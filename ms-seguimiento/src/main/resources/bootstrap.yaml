@@ -1,0 +1,15 @@
+spring:
+  application:
+    name: ms-seguimiento
+    # student-service
+  cloud:
+    config:
+      enabled: true
+      uri: http://localhost:8081
+  datasource:
+    url: jdbc:postgresql://localhost:5432/db-seguimiento
+    username: postgres
+    password: password
+  jpa:
+    hibernate:
+      ddl-auto: create-drop
